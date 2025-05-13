@@ -1,0 +1,56 @@
+CREATE DATABASE ecrh_major;
+
+CREATE TABLE user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    dob DATE NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    document_type VARCHAR(20) NOT NULL,
+    document_details VARCHAR(255),
+    registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE quickfir (
+    fir_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    emergency_contact VARCHAR(20) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    description TEXT,
+    when_occured_date DATE NOT NULL,
+    when_occurred_time TIME NOT NULL,
+    where_occured_state VARCHAR(255) NOT NULL,
+    where_occured_city VARCHAR(255) NOT NULL,
+    landmark VARCHAR(255) NOT NULL,
+    fir_report_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    fir_status varchar(255)
+);
+
+
+CREATE TABLE admin (
+    id bigint NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    email varchar(255) NOT NULL UNIQUE,
+    name varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+    registration_date datetime(6)
+);
+
+
+CREATE TABLE After_Login_FIR (
+    fir_id INT AUTO_INCREMENT PRIMARY KEY,
+    email varchar(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    emergency_contact VARCHAR(20) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    description TEXT,
+    when_occured_date DATE NOT NULL,
+    when_occurred_time TIME NOT NULL,
+    location_state VARCHAR(255) NOT NULL,
+    location_city VARCHAR(255) NOT NULL,
+    landmark VARCHAR(255) NOT NULL,
+    fir_report_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    fir_status varchar(255)
+);

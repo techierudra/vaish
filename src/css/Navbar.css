@@ -1,0 +1,10 @@
+.custom-nav-dropdown .nav-link {
+    color: white !important;
+  }
+  
+
+  .custom-navbar {
+    background-color: rgb(43, 42, 42); /* Use your desired shade of grey */
+    color: #ffffff; /* Text color for navbar items */
+  }
+  

@@ -1,0 +1,51 @@
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  max-width: 100%; /* Ensure table does not exceed container width */
+}
+
+.table {
+  width: 100%; /* Ensure table takes up 100% width of its container */
+}
+
+Additional styles for table header and body cells can be added here
+
+
+/* Styles for the table container */
+.table-container {
+  max-width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling when needed */
+}
+
+/* Styles for the table */
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+/* Styles for table header row */
+.table thead th {
+  background-color: #343a40; /* Dark background color for header */
+  color: #fff; /* Text color for header */
+  padding: 10px; /* Padding for header cells */
+  text-align: center; /* Center-align text in header cells */
+}
+
+/* Styles for table body rows */
+.table tbody td {
+  padding: 8px; /* Padding for table cells */
+  text-align: center; /* Center-align text in table cells */
+  border-bottom: 1px solid #dee2e6; /* Bottom border for table rows */
+}
+
+/* Responsive styling for table on smaller screens */
+@media (max-width: 768px) {
+  /* Center-align text in table header cells */
+  .table thead th {
+    text-align: center;
+  }
+
+  /* Center-align text in table body cells */
+  .table tbody td {
+    text-align: center;
+  }
+}
