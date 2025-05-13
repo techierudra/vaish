@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Navbar from '../components/Navbar';
 import Title from '../components/Title';
-import vaish from '../images/vash.jpeg';
+import vash from '../images/vash.jpeg';
 import prajin from '../images/prajin.jpeg';
 import '../css/aboutUs.css';
 
